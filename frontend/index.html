@@ -4,17 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        
+    </style>
 </head>
 <body>
     <h2>College Calculater</h2>
-    <div>
-        <div>
-            <span>
-                <input type ="checkbox">
-                <label for="checkedGPA">enter your high school GPA here:</label>
-                <input type="number" id="GPA">
-            </span>
-    </div>
+    <div class="input_container">
+        <div class="input_field">
+            <div>
+                <input type ="checkbox" id="checkedGPA">
+                <label for="checkedGPA">SAT score (400-1600)</label>
+            </div>
+            <input class="input_box"type="number" id="GPA" min="400" max="1600">
+        </div>
+       
+        <div class="input_field">
+            <div>
+                <input type="checkbox" id="checkedACT">
+                <label for="checkedACT">ACT score (1-36)</label>
+            </div>
+            <input class="input_box" type="number" id="ACT" min="1" max="36">
+        </div>
+        <div class="input_field">
+            <div>
+                <input type="checkbox" id="checkedExtraCurricularScore">
+                <label for="checkedExtraCurricularScore">Extra Curricular Score (1-10)</label>
+            </div>
+            <input class="input_box" type="number" id="ExtraCurricularScore" min="1" max="10">
+        </div>
+        <div class="input_field">
+            <div>
+                <input type="checkbox" id="checkedGPA">
+                <label for="checkedGPA">Put in your unwieghted GPA (0-4.0)</label>
+            </div>
+            <input class="input_box" type="number" id="GPA" min="0" max="4.0">
+        </div>
     </div>
 </body>
 </html>
