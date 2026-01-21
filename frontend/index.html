@@ -9,38 +9,39 @@
         
     </style>
 </head>
-<body>
-    <h2>College Calculater</h2>
-    <div class="input_container">
-        <div class="input_field">
-            <div>
-                <input type ="checkbox" id="checkedGPA">
-                <label for="checkedGPA">SAT score (400-1600)</label>
+    <body>
+        <h2>College Calculater</h2>
+        <div class="input_container">
+            <div class="input_field">
+                <div>
+                    <input type ="checkbox" id="checkedGPA" checked>
+                    <label for="checkedGPA">SAT score (400-1600)</label>
+                </div>
+                <input class="input_box"type="number" id="GPA" min="400" max="1600">
             </div>
-            <input class="input_box"type="number" id="GPA" min="400" max="1600">
-        </div>
-       
-        <div class="input_field">
-            <div>
-                <input type="checkbox" id="checkedACT">
-                <label for="checkedACT">ACT score (1-36)</label>
+        
+            <div class="input_field">
+                <div>
+                    <input type="checkbox" id="checkedACT" checked>
+                    <label for="checkedACT">ACT score (1-36)</label>
+                </div>
+                <input class="input_box" type="number" id="ACT" min="1" max="36">
             </div>
-            <input class="input_box" type="number" id="ACT" min="1" max="36">
-        </div>
-        <div class="input_field">
-            <div>
-                <input type="checkbox" id="checkedExtraCurricularScore">
-                <label for="checkedExtraCurricularScore">Extra Curricular Score (1-10)</label>
+            <div class="input_field">
+                <div>
+                    <input type="checkbox" id="checkedExtraCurricularScore" checked>
+                    <label for="checkedExtraCurricularScore">Extra Curricular Score (1-10)</label>
+                </div>
+                <input class="input_box" type="number" id="ExtraCurricularScore" min="1" max="10">
             </div>
-            <input class="input_box" type="number" id="ExtraCurricularScore" min="1" max="10">
-        </div>
-        <div class="input_field">
-            <div>
-                <input type="checkbox" id="checkedGPA">
-                <label for="checkedGPA">Put in your unwieghted GPA (0-4.0)</label>
+            <div class="input_field">
+                <div>
+                    <input type="checkbox" id="checkedGPA" checked>
+                    <label for="checkedGPA">Put in your unwieghted GPA (0-4.0)</label>
+                </div>
+                <input class="input_box" type="number" id="GPA" min="0" max="4.0">
             </div>
-            <input class="input_box" type="number" id="GPA" min="0" max="4.0">
         </div>
-    </div>
-</body>
+        <script src="script.js"></script>
+    </body>
 </html>
